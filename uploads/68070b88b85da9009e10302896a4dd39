@@ -1,0 +1,325 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+% \usepackage{xcolor}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.6in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape \textbf{Aadarsh Negi}} \\ \vspace{2pt}
+    {\href{tel:+917906636012}{\faPhone \underline{+91-7906636012}}} ~
+    { \href{mailto:aadarshnegi.2@gmail.com}{{\underline
+    {aadarshnegi.2@gmail.com}}}} ~ 
+    { \href{https://www.linkedin.com/in/aadarsh-negi-a7660ba5/}{{\underline {LinkedIn}}}}
+    % ~
+
+    \vspace{-8pt}
+\end{center}
+% \begin{center}
+%     {\Huge \scshape Your Name} \\ \vspace{1pt}
+%     city,state \\ \vspace{1pt}
+    % \small \href{tel:+xxxxxxxxxxxx}{ \raisebox{-0.1\height}\faPhone\ \underline{+xx-9999999999} ~} \href{mailto:yourname@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{yourname@gmail.com}} ~ 
+    % \href{https://linkedin.com/in/yourid}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{yourid}}  ~
+    % \href{https://github.com/yourid}{\raisebox{-0.2\height}\faGithub\ \underline{yourid}} ~
+    % \href{https://www.hackerrank.com/yourid}{\raisebox{-0.2\height}\faHackerrank\ \underline{yourid}} ~
+    % \href{https://codeforces.com/profile/yourid}{\raisebox{-0.2\height}\faPoll\ \underline{yourid}}
+    % \vspace{-8pt}
+% \end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{Graphic Era(Deemed to be university)}}{Sept 2020 - Jul 2024}
+      {Bachelor of Technology in Computer Science and Engineering (\textbf{GPA: 9.52})}{Dehradun,Uttarakhand}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Electronics Company}{May 2020 -- August 2020}
+%       {Software Engineer Intern}{City, State}
+%       \resumeItemListStart
+%         \resumeItem{Developed a service to automatically perform a set of unit tests daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.}
+%         \resumeItem{Incorporated scripts using Python and PowerShell to aggregate XML test results into an organized format and to load the latest build code onto the hardware, so that daily testing can be performed.}
+%         \resumeItem{Utilized Jenkins to provide a continuous integration service in order to automate the entire process of loading the latest build code and test files, running the tests, and generating a report of the results once per day.}
+%         \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+%       \resumeItemListEnd
+
+%     \resumeSubheading
+%       {Startup, Inc}{May 2019 -- August 2019}
+%       {Front End Developer Intern}{City, State}
+%       \resumeItemListStart
+%         \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+%         \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+%         \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+%         \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+%     \resumeItemListEnd
+    
+%   \resumeSubHeadingListEnd
+% \vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+     \resumeProjectHeading
+          { {\textbf{Desktop Group Chat Application}} $|$ \emph{Java, Socket programming, Multithreading} $|$ {\faGithub}\href{https://github.com/Aadarsh-Negi/ChatApp_V2}{GitHub} }{Feb 2022}
+          \resumeItemListStart
+            \resumeItem{Designed a simple chat application which support multiple user at a time with the help of multithreading.}
+            \resumeItem{It has a feature which allow any type of file sharing between multple users.}
+            \resumeItem{Implemented object-oriented programming practices such as inheritance to handle multiple users request.}
+          \resumeItemListEnd 
+      
+          \vspace{-13pt}
+      \resumeProjectHeading
+        %   {\textbf{Tic-tac-toe Android App} $|$ \emph{Java, Android Studio, Google firebase}}{Feb 2022}
+          {{\textbf{Tic-tac-toe Android App}} $|$ \emph{Java, Android Studio, Google firebase} $|$ {\faGithub}  \href{https://github.com/Aadarsh-Negi/tictac/}{GitHub}}{Dec 2021} 
+          \resumeItemListStart
+            \resumeItem{Created an Android application using Java and Android Studio for famous board game tic-tac-toe
+            with\linebreak 2 differnt mode online and offline.}
+            \resumeItem{For online mode it creates a room with a id in google firebase realtime database and other person
+            \linebreak joins the room with that id.}
+            \resumeItem{Utilized the GradientDrawable to create a 3x3 board for the application in order to allow different colors\linebreak to different user.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {{\textbf{Moodle attendence Bot}} $|$ \emph{Python, Selenium, Browserstack, Google Cloud Console} $|$ {\faGithub}\href{https://github.com/Aadarsh-Negi/Moodle-bot} {GitHub}}{Nov 2021}
+          \resumeItemListStart
+            \resumeItem{Developed an automatic bot using Python, Browserstack and Google Cloud Console to mark my attendence.}
+            \resumeItem{Used Browserstack which provides a instance of a web browser to run our script.}
+            \resumeItem{Created a Linux virtual machine to run on Google Cloud so that the program is able to run everyday\linebreak from the cloud.}
+            \resumeItem{Used Cron to schedule the program to execute automatically every hour starting from 9 to 4 every day\linebreak to mark my attendence.}
+          \resumeItemListEnd
+         
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+
+
+
+%-----------INVOLVEMENT---------------
+\section{Achievements}
+    % \resumeSubHeadingListStart
+      \begin{itemize}
+      \item  \textbf{Codeforces $|$ \textcolor{BlueGreen}{Specialist} : Max Rating - 1547} $|$ {\textcolor{BlueViolet}{\href{https://codeforces.com/profile/Aadarsh_negi/}{\small \textbf{Profile}}}} \vspace{-0.3cm}
+        \begin{itemize}
+            \item {\textbf{Secured Global} rank \textbf{503} in Codeforces Round \#790 and \textbf{660} in Codeforces Round \#798.}\vspace{-0.1cm}
+            \item {Participated in \textbf{100+} contests and solved \textbf{1100+} problems over the span of 1.5 years.}
+            
+        \end{itemize}
+        
+        
+           \item \textbf{Leetcode $|$ {Knight} : Max Rating - 2033} $|$ {\textcolor{BlueViolet}{\href{https://leetcode.com/ghost0ad/}{\small \textbf{Profile}}}} \vspace{-0.3cm}
+            \begin{itemize}
+                \item {\textbf{Secured global} rank \textbf{202} in Biweekly Contest 83 and \textbf{403} in Biweekly Contest 79.}\vspace{-0.1cm}
+                \item {Solved \textbf{580+} problems with a \textbf{daily challenge streak of 210+}. }
+            \end{itemize}
+    
+    \item \textbf{Codechef $|$ \textcolor{Purple}{\large 4 star} : Max Rating - 1996} $|$ {\textcolor{BlueViolet}{\href{https://www.codechef.com/users/densetsu}{\textbf{\small Profile}}}} \vspace{-0.3cm}
+    \begin{itemize}
+                \item {\textbf{Secured global} rank \textbf{145} in Codechef January Cook-off 2022 and \textbf{256} in Codechef October Cook-off 2021.}
+
+            \end{itemize}
+      \item \textbf{Google $|$  Coding competition by Google} $|$ {\textcolor{BlueViolet}{\href{https://drive.google.com/drive/folders/18oda1he7sXg7f5vkhMpWRN34M3PF_n8z?usp=sharing}{\small \textbf{Certificates}}}}\vspace{-0.3cm}
+      \begin{itemize}
+                \item {Participated in more than 7 Kickstart Rounds with \textbf{best global rank} \textbf{682} in Round D 2022 and \textbf{980} in Round B 2022.}
+            \end{itemize}
+
+%     \item \textbf{Position held} | \textbf{\emph{Name of university or company}}\hfill \emph{(July’17-Apr'18)}\\[-0.6cm]
+%     \begin{itemize}[noitemsep]
+%         \item Description\\[-0.5cm]
+    \end{itemize}
+%     \item \textbf{Position held} | \textbf{\emph{Name of university or company}}\hfill \emph{(July’17-Apr'18)}\\[-0.6cm]
+%     \begin{itemize}[noitemsep]
+%         \item Description\\[-0.5cm]
+%     \end{itemize}
+% \end{itemize}
+        % \resumeSubheading{
+        % \resumeProjectHeading{
+        
+
+        
+ 
+ 
+        
+        
+        %   \begin{enumerate}
+        % \item  a 
+        % \end{enumerate}
+        
+     
+        %   \begin{enumerate}
+        % \item  a 
+        % \end{enumerate}
+            % \href{https://codeforces.com/profile/Aadarsh_negi/}{{Codeforces}} ~
+    % \href{https://www.codechef.com/users/densetsu}{{Codechef}} ~
+    % \href{https://leetcode.com/ghost0ad/}{{Leetcode}}
+        
+            % \resumeItemListStart
+                
+                % \resumeItem{\textbf{4 star} on Codechef.(Max rating: 1924)}
+                % \resumeItem{\textbf{Knight} on Leetcode. (Max rating: 1971 (Top 3.32\%))}
+            %     \resumeItem{Solved total of \textbf{1300+} problems on platforms like Codeforces, Codechef, Atcoder etc.}
+            %       \resumeItem{Global rank \textbf{145} in Codechef January Cook-off 2022.}
+            %     \resumeItem{Global rank \textbf{256} in Codechef October Cook-off 2021.}
+            %     \resumeItem{Secured global rank \textbf{980} in Google kickstart round B 2022.}
+            %     \resumeItem{Secured global Rank \textbf{1973/10k+} and country rank \textbf{573/5400} in Google Hashcode 2022 \href{https://codingcompetitions.withgoogle.com/hashcode/round/00000000008caae7}{\textbf{[Team: actually]}.}}
+            %     \resumeItem{Secured global Rank \textbf{403} in Leetcode Biweekly Contest 79.}
+            %     \resumeItem{Won Inter college competition TechWizard organised by Graphic Era.(Cash prize of \textbf{51 thousand}).}
+                
+            % \resumeItemListEnd
+        
+    % \resumeSubHeadingListEnd
+    
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.2in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Java, Python, SQL} \\
+     \textbf{Developer Tools}{: VS Code, Eclipse, Pycharm, Intellij IDEA, Android Studio} \\
+     \textbf{Technologies/Frameworks}{: Java swing,Selenium, Linux, Firebase, Git, Github} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+%------RELEVANT COURSEWORK-------
+% \section{Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{2}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item Design and Analysis of Algorithms
+%                 \item Computer organisation
+%                 \item Java programming language
+%                 \item Finite automata and formal languages
+%                 \item Microprocessors
+%                 \item Introduction to cryptography
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+
+\end{document}
